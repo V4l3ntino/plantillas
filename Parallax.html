@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="parallaxCss.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Logo</a>
+        <ul class="navigation">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Contacts</a></li>
+        </ul>
+    </header>
+    <section class="parallax">
+        <h2 id="text">Parallax Website</h2>
+        <img src="./monutain_01.png" alt="Error with image" id="m1">
+        <img src="./trees_02.png" alt="Error with image" id="t2">
+        <img src="./monutain_02.png" alt="Error with image" id="m2">
+        <img src="./trees_01.png" alt="Error with image" id="t1">
+        <img src="./man.png" alt="Error with image" id="man">
+        <img src="./plants.png" alt="Error with image" id="plants">
+    </section>
+    <section class="sec">
+        <h2>Parallax scrolling website </h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni itaque nihil rem esse sint laborum quam vel obcaecati exercitationem suscipit ullam cumque quibusdam assumenda, quae, distinctio tempora error soluta aperiam dolore corrupti. Quod consequatur culpa quaerat voluptates id atque delectus expedita, excepturi nostrum sapiente, reprehenderit nulla rem ullam exercitationem cupiditate aut. Suscipit id dolorem, tenetur debitis voluptatibus voluptatem in porro quisquam, ipsa, unde cupiditate. Incidunt exercitationem illum animi eveniet facilis facere dolorem commodi at quibusdam possimus cum, mollitia eos reprehenderit ducimus nam architecto doloribus ipsam ad odit iusto tempora unde? Sit eos ex ipsam, quidem labore possimus, odio, odit itaque sapiente omnis harum ullam facere accusantium asperiores! Maxime molestiae reiciendis sequi quas quia exercitationem tempore suscipit atque at, itaque impedit? Quos, maxime similique aspernatur nam sed explicabo id velit minus, reprehenderit qui dolore voluptas eius recusandae sint cupiditate quasi placeat? Eius vel, quia quod optio, quibusdam aut autem accusantium nulla sunt, laboriosam perspiciatis eligendi. Necessitatibus ducimus, fugit atque quasi optio eveniet <br><br> a obcaecati fuga non voluptate quis officia ratione? Quia, corporis libero quam ad sunt ducimus laboriosam expedita a delectus tempore quaerat eos distinctio, est rem incidunt! Dolor omnis vel odit nemo voluptatem aliquid enim, quaerat voluptatibus dolorum eos beatae ullam velit, ipsam nisi temporibus! Magni odit tenetur illo earum eius quos, fuga nemo officia eveniet porro, ullam praesentium nesciunt, culpa officiis exercitationem unde consectetur atque debitis. Doloribus provident aliquam animi itaque quibusdam suscipit magnam sint voluptatibus mollitia, nihil pariatur eius impedit ipsum cum doloremque accusantium hic, repellendus dolor. Consectetur fugit, quibusdam iure sequi tempore nemo accusantium totam nam magnam? Mollitia sed illum, ducimus nobis vitae suscipit deleniti nam eos, dolore incidunt odit earum alias ratione doloremque deserunt corrupti? Necessitatibus, fugiat nobis animi accusantium quos illum aliquam quo dolorum perspiciatis qui officia illo reiciendis, fugit explicabo libero facere! Mollitia tempora autem, corrupti corporis inventore a expedita veniam eveniet nulla deserunt? Animi tenetur provident dolorum labore fugiat magnam quidem repudiandae eaque magni sapiente atque quaerat nobis doloremque consequatur, ad ex, possimus maiores sint omnis dolor illo quas facilis. Atque ab obcaecati dolorum doloremque libero neque pariatur voluptatem consequatur animi minus repellendus eius esse suscipit nulla, unde soluta voluptates! Enim quo consequuntur <br><br> quos amet dolore ipsum vero atque architecto, beatae ducimus recusandae ullam ipsam aspernatur. Ipsum magnam quo, aspernatur ratione enim iure tenetur accusamus dolore, recusandae voluptatum veritatis quaerat aut architecto sequi, earum repellendus voluptates inventore dolores ullam? Neque laboriosam quisquam quia impedit deleniti veritatis obcaecati dolorum libero, magni cum odio modi officiis in fuga adipisci eaque tenetur quaerat quasi error maiores a quod similique? Libero nisi asperiores veniam culpa molestiae aperiam, rem earum quisquam tenetur odit nobis ipsa optio. Voluptatibus, dolorem commodi sunt iste ipsum laudantium eum eveniet dicta doloribus, veniam impedit, distinctio qui. Suscipit impedit iure tenetur laudantium deleniti quo? Dignissimos nostrum beatae aliquid nihil eos ad pariatur quidem facere adipisci exercitationem dolor, aliquam ipsam suscipit obcaecati temporibus quod sit. Cupiditate soluta animi, quaerat adipisci non magnam rerum rem doloribus modi hic cum in dignissimos, aspernatur sed maxime ratione fugiat.</p>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script>
+        gsap.from("#m1",{
+            scrollTrigger : {
+                scrub: true
+            },
+            y: 100,
+        })
+        gsap.from("#m2",{
+            scrollTrigger : {
+                scrub: true
+            },
+            y: 50,
+        })
+        gsap.from("#t2",{
+            scrollTrigger : {
+                scrub: true
+            },
+            x: -50,
+        })
+        gsap.from("#t1",{
+            scrollTrigger : {
+                scrub: true
+            },
+            x: 50,
+        })
+        gsap.from("#man",{
+            scrollTrigger : {
+                scrub: true
+            },
+            x: -250,
+        })
+        gsap.from("#plants",{
+            scrollTrigger : {
+                scrub: true
+            },
+            x: -150,
+        })
+        gsap.from("#text",{
+            scrollTrigger : {
+                scrub: true
+            },
+            x: 500,
+        })
+    </script>
+</body>
+</html>
