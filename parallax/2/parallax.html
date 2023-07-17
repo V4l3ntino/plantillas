@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax</title>
+    <link rel="stylesheet" href="./parallax.css">
+</head>
+<body>
+    <section>
+        <img src="./bg.jpg" alt="ERROR" id="bg">
+        <img src="./moon.png" alt="ERROR" id="moon">
+        <img src="./mountain.png" alt="ERROR" id="mountain">
+        <img src="./road.png" alt="ERROR" id="road">
+        <h2 id="text">Moon Light</h2>
+    </section>
+
+    <h2 class="title">Parallax Website</h2>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus accusantium quia numquam minima enim ex velit voluptate molestias ratione nesciunt debitis, inventore aperiam. Nisi, quibusdam dolorum! Quibusdam impedit dignissimos sed aliquid quia, neque culpa. Officiis error doloremque tempore vitae ratione minus sit minima expedita ad quas optio consequatur reiciendis iusto nesciunt excepturi hic at quaerat, nihil quidem consectetur possimus neque delectus perferendis assumenda. Pariatur asperiores maiores reprehenderit perspiciatis deleniti beatae, nihil fugit accusantium exercitationem fugiat repellendus enim. Fugit est quidem nulla deserunt, repellendus harum voluptatem tenetur consequuntur? Facilis repudiandae inventore perferendis ipsum unde eos error iusto quo tempora architecto perspiciatis voluptate ipsa provident iste deleniti, ab amet numquam ullam illum excepturi dolorum? Aut, accusantium labore id ad aperiam corporis cupiditate mollitia sint quisquam a quae tempore excepturi repellat debitis! Neque quo similique blanditiis architecto minima adipisci id necessitatibus. Fugit velit quos nostrum tempore, aperiam cumque magni voluptate, dolor, similique sed laborum fugiat animi ad soluta ratione provident iste laudantium itaque sint perspiciatis delectus molestiae quibusdam in corporis. Excepturi tenetur nobis, inventore, modi voluptates sit beatae voluptate dolor numquam minima ex vel cum, accusamus totam. Incidunt omnis <br><br> consectetur molestias fugit, voluptatem odit unde ut officia magnam beatae voluptas, aliquid quaerat ducimus blanditiis dolor aliquam distinctio debitis odio reprehenderit ipsa eum vel. Est asperiores velit odio provident sit voluptatibus assumenda suscipit fugiat, qui adipisci cum, porro deserunt. Sequi, temporibus aliquid aut deleniti repudiandae placeat mollitia modi accusantium distinctio fugit eligendi sapiente, quaerat officia in illum commodi impedit. Quisquam, voluptate nesciunt. Voluptatum unde aspernatur harum ab maxime, adipisci sit accusantium incidunt recusandae pariatur nisi dolores doloribus blanditiis distinctio deleniti magnam alias, sequi voluptatibus officiis illo qui nihil! Sit distinctio dolorem sunt aliquid quos tempore cumque molestiae corporis quia? Eos id corrupti quae voluptas non magni aspernatur ratione consequatur incidunt inventore saepe <br><br> sint et quo nam quod, expedita deleniti, ipsa odio. Accusamus nam sint consequatur debitis fuga nesciunt, harum vel ducimus veritatis dolorem aut omnis, eos deserunt soluta doloribus animi voluptate libero modi optio tenetur, tempora dolores neque. Ipsa, reiciendis? Eum doloremque iste maiores aspernatur modi beatae quasi dicta similique possimus labore dolores, ratione natus odio tenetur quas ullam, minima ex vero, fugit officiis sequi culpa consectetur. Commodi culpa in vitae rerum quaerat vero enim aut adipisci ullam consectetur unde recusandae nulla, at reprehenderit? Repellat ex magnam veritatis nostrum quisquam vero. Consectetur ipsam omnis maxime tenetur neque quidem repellat tempore, cupiditate vitae optio veritatis perferendis ipsum eveniet aliquam, nemo adipisci voluptatem modi! Qui laboriosam quam rerum incidunt, libero provident dolor praesentium, voluptates dignissimos ea vel.Distinctio ea perspiciatis sed, nobis fugit deserunt laboriosam aperiam aspernatur, necessitatibus expedita quasi maiores suscipit voluptate vitae pariatur consequuntur vel cumque dolor. Illo eius sapiente magni quam soluta velit voluptatum necessitatibus, sint pariatur tempore veritatis veniam dolorum. Earum esse voluptate corporis fugiat assumenda iusto odit repellat, labore dolor quam! Reiciendis odit vitae velit exercitationem natus numquam neque, cumque earum eos tempora asperiores sequi tenetur labore ipsam illum consequuntur eum aliquam, sed molestias? Tenetur veritatis neque omnis. Officia, animi illum?
+    </p>
+
+    <script type="text/javascript">
+        let bg = document.getElementById("bg");
+        let moon = document.getElementById("moon");
+        let mountain = document.getElementById("mountain");
+        let road = document.getElementById("road");
+        let text = document.getElementById("text");
+
+        window.addEventListener('scroll', function(){
+            var value = window.scrollY;
+            bg.style.top = value * 0.5 + 'px';
+            moon.style.left = -value * 0.5 + 'px';
+            mountain.style.top = -value * 0.15 + 'px';
+            road.style.top = value * 0.15 + 'px';
+            text.style.top = value * 1 + 'px';
+
+        })
+    </script>
+</body>
+</html>
