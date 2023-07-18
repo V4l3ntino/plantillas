@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinations</title>
+    <link rel="stylesheet" href="./combination.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Logo</a>
+        <ul class="navigation">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Contacts</a></li>
+        </ul>
+    </header>
+    <div class="container">
+        <div class="area">
+            <div class="subcontainer">
+                <div class="card">
+                    <div class="content">
+                        <h3>Card One</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita modi dolorem perferendis! Reiciendis sed distinctio necessitatibus. Cum, recusandae magnam cumque amet minima veritatis sequi labore dolores. Delectus nesciunt voluptatum debitis?</p>
+                    </div>
+                </div>
+                <div class="btn btn1"><a href="#">Read More</a></div>
+            </div>
+            <div class="subcontainer">
+                <div class="card">
+                    <div class="content">
+                        <h3>Card Two</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita modi dolorem perferendis! Reiciendis sed distinctio necessitatibus. Cum, recusandae magnam cumque amet minima veritatis sequi labore dolores. Delectus nesciunt voluptatum debitis?</p>
+                    </div>
+                </div>
+                <div class="btn btn2"><a href="#">Read More</a></div>
+            </div>
+            <div class="subcontainer">
+                <div class="card">
+                    <div class="content">
+                        <h3>Card Three</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita modi dolorem perferendis! Reiciendis sed distinctio necessitatibus. Cum, recusandae magnam cumque amet minima veritatis sequi labore dolores. Delectus nesciunt voluptatum debitis?</p>
+                    </div>
+                </div>
+                <div class="btn btn3"><a href="#">Read More</a></div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="vanilla-tilt.js"></script>  
+    <script>
+        VanillaTilt.init(document.querySelectorAll(".card"),{
+		max: 25,
+		speed: 400,
+        glare: true,
+        "max-glare": 1,
+	});
+    </script>
+</body>
+</html>
