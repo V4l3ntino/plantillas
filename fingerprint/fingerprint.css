@@ -65,7 +65,7 @@ body
     animation: animate_line 4s ease-in-out infinite;
 }
 @keyframes animate_line
-{filter: drop-shadow(0 0 20px #3fefef) drop-shadow(0 0 60px #3fefef);
+{
     0%,100%
     {
         top: 0%;
